@@ -19,10 +19,10 @@ export function trackOutboundClick(link: string) {
   track("outbound_click", { link });
 }
 
-export function trackOptinModalOpen() {
-  track("optin_modal_open", { source: "free-training" });
+export function trackOptinModalOpen(source = "free-training") {
+  track("optin_modal_open", { source });
 }
 
-export function trackOptinSubmit() {
-  track("optin_submit", { source: "free-training" });
+export function trackOptinSubmit(source = "free-training") {
+  track("optin_submit", { source });
 }
