@@ -10,6 +10,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import BreakdownOptin from "./pages/BreakdownOptin";
 import FreeTraining from "./pages/FreeTraining";
 import HarjinderBreakdown from "./pages/HarjinderBreakdown";
+import MobinBreakdown from "./pages/MobinBreakdown";
 import Terms from "./pages/Terms";
 import ThankYou from "./pages/ThankYou";
 import Training from "./pages/Training";
@@ -23,6 +24,8 @@ function Router() {
       <Route path="/training" component={Training} />
       <Route path="/breakdown-harjinder">{() => <BreakdownOptin clientSlug="harjinder" clientName="Harjinder" headline={<>How Harjinder Made <span className="relative inline-block"><span className="relative z-10">£27,830 in 30 Days</span><svg className="absolute -bottom-1 left-0 w-full" height="8" viewBox="0 0 200 8" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.5C20 2 40 7 60 4.5C80 2 100 6.5 120 3.5C140 1 160 6 180 4C190 3 197 5.5 199 4.5" stroke="#EAB308" strokeWidth="3" strokeLinecap="round"/></svg></span> Tutoring Chemistry Online</>} pronoun="his" videoSrc="/breakdowns/harjinder-preview.mp4" />}</Route>
       <Route path="/harjinder-breakdown" component={HarjinderBreakdown} />
+      <Route path="/breakdown-mobin">{() => <BreakdownOptin clientSlug="mobin" clientName="Mobin" headline={<>How Mobin Made <span className="relative inline-block"><span className="relative z-10">$40.5K in 60 Days</span><svg className="absolute -bottom-1 left-0 w-full" height="8" viewBox="0 0 200 8" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.5C20 2 40 7 60 4.5C80 2 100 6.5 120 3.5C140 1 160 6 180 4C190 3 197 5.5 199 4.5" stroke="#EAB308" strokeWidth="3" strokeLinecap="round"/></svg></span> Tutoring SAT over Zoom</>} pronoun="his" videoSrc="/breakdowns/mobin-preview.mp4" />}</Route>
+      <Route path="/mobin-breakdown" component={MobinBreakdown} />
       <Route path="/thankyou" component={ThankYou} />
       <Route path="/terms" component={Terms} />
       {/* Anything else: send the visitor to the opt-in instead of a 404 */}
