@@ -10,6 +10,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import BreakdownOptin from "./pages/BreakdownOptin";
 import FreeTraining from "./pages/FreeTraining";
 import HarjinderBreakdown from "./pages/HarjinderBreakdown";
+import FatimaBreakdown from "./pages/FatimaBreakdown";
 import HassanBreakdown from "./pages/HassanBreakdown";
 import MobinBreakdown from "./pages/MobinBreakdown";
 import Terms from "./pages/Terms";
@@ -29,6 +30,8 @@ function Router() {
       <Route path="/mobin-breakdown" component={MobinBreakdown} />
       <Route path="/breakdown-hassan">{() => <BreakdownOptin clientSlug="hassan" clientName="Hassan" headline={<>How Hassan Went From Working 9-5 To Making <span className="relative inline-block"><span className="relative z-10">$15,000 Tutoring Online</span><svg className="absolute -bottom-1 left-0 w-full" height="8" viewBox="0 0 200 8" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.5C20 2 40 7 60 4.5C80 2 100 6.5 120 3.5C140 1 160 6 180 4C190 3 197 5.5 199 4.5" stroke="#EAB308" strokeWidth="3" strokeLinecap="round"/></svg></span> in 2 Months</>} pronoun="his" videoSrc="/breakdowns/hassan-preview.mp4" />}</Route>
       <Route path="/hassan-breakdown" component={HassanBreakdown} />
+      <Route path="/breakdown-fatima">{() => <BreakdownOptin clientSlug="fatima" clientName="Fatima" headline={<>How Fatima Turned Her Tutoring Side-Hustle Into A <span className="relative inline-block"><span className="relative z-10">6-Figure Business</span><svg className="absolute -bottom-1 left-0 w-full" height="8" viewBox="0 0 200 8" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5.5C20 2 40 7 60 4.5C80 2 100 6.5 120 3.5C140 1 160 6 180 4C190 3 197 5.5 199 4.5" stroke="#EAB308" strokeWidth="3" strokeLinecap="round"/></svg></span></>} pronoun="her" videoSrc="/breakdowns/fatima-preview.mp4" />}</Route>
+      <Route path="/fatima-breakdown" component={FatimaBreakdown} />
       <Route path="/thankyou" component={ThankYou} />
       <Route path="/terms" component={Terms} />
       {/* Anything else: send the visitor to the opt-in instead of a 404 */}
